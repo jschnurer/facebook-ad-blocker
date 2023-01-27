@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Facebook Ad Blocker",
+  "version": "1.0",
+
+  "description": "Tries to (inefficiently) hide all facebook sponsored posts, suggested posts, and reels. Visit the project's source code at Git Hub. https://github.com/jschnurer/facebook-ad-blocker",
+
+  "icons": {
+    "48": "icon.svg",
+    "96": "icon.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["facebook-ad-blocker.js"]
+    }
+  ]
+
+}
